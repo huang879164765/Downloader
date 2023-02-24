@@ -11,7 +11,7 @@ public class downLoadTool {
         URL url = new URL(source);
         InputStream is = url.openConnection().getInputStream();
         String filepath = target_path + source.substring(source.lastIndexOf("/"));
-        OutputStream os = new FileOutputStream(filepath);;
+        OutputStream os = new FileOutputStream(filepath);
         byte[] bs = new byte[1024];
         int len = 0;
         int target_length = 0;
